@@ -133,3 +133,10 @@ Prompt Template
 {context}
 {character_name}「
 ```
+
+
+# Acknowledgments
+
+* [Ayumi LLM Role Play & ERP Ranking](https://rentry.co/ayumi_erp_rating)
+* [The Rakuda Ranking of Japanese AI](https://yuzuai.jp/benchmark)
+
