@@ -1,3 +1,11 @@
+<p align="center">
+  <picture>
+    <img src="https://furoriented.org/benchmark_characters.png" width="800"">
+  </picture>
+  <br/>
+  <br/>
+</p>
+
 # japanese-llm-roleplay-benchmark
 
 このリポジトリは日本語LLMのキャラクターロールプレイに関する性能を評価するために作成しました。  
@@ -139,4 +147,4 @@ Prompt Template
 
 * [Ayumi LLM Role Play & ERP Ranking](https://rentry.co/ayumi_erp_rating)
 * [The Rakuda Ranking of Japanese AI](https://yuzuai.jp/benchmark)
-
+* キャラクターの画像は[nijijourney](https://nijijourney.com/)を使用して作成しました
