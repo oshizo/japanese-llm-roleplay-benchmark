@@ -17,16 +17,16 @@ Webサービスでのテキスト生成は手作業で行いました。生成�
 
 ## Leaderboard v20230917
 
-| model_id                                                | Rating ± RD   | ERP Score |
-|:--------------------------------------------------------|:--------------|:----------|
-| GPT-4/ChatGPT-August-3                                  | 1631 ± 93     |         - |
-| supertrin-beta                                          | 1482 ± 81     |      <ins>0.67</ins> |
-| GPT-3.5/ChatGPT-August-3                                | 1418 ± 77     |         - |
-| elyza/ELYZA-japanese-Llama-2-7b-fast-instruct           | 1184 ± 72     |      0.42 |
-| line-corporation/japanese-large-lm-3.6b-instruction-sft | 1131 ± 68     |      0.17 |
-| AIBunCho/japanese-novel-gpt-j-6b                        | 1039 ± 76     |      0.50 |
-| rinna/bilingual-gpt-neox-4b-instruction-ppo             |  920 ± 80     |      0.08 |
-| stabilityai/japanese-stablelm-instruct-alpha-7b-v2      |  rating now   |      **0.75** |
+| model_id                                                | Rating ± RD   | ERP Score   |
+|:--------------------------------------------------------|:--------------|:------------|
+| GPT-4/ChatGPT-August-3                                  | 1630 ± 88     |           - |
+| supertrin-beta                                          | 1477 ± 76     | <ins>0.67</ins> |
+| GPT-3.5/ChatGPT-August-3                                | 1428 ± 73     |           - |
+| stabilityai/japanese-stablelm-instruct-alpha-7b-v2      | 1224 ± 71     |    **0.75** |
+| elyza/ELYZA-japanese-Llama-2-7b-fast-instruct           | 1197 ± 68     |        0.42 |
+| line-corporation/japanese-large-lm-3.6b-instruction-sft | 1120 ± 66     |        0.17 |
+| AIBunCho/japanese-novel-gpt-j-6b                        | 1048 ± 76     |        0.50 |
+| rinna/bilingual-gpt-neox-4b-instruction-ppo             | 934 ± 77      |        0.08 |
 
 ## Rating
 
