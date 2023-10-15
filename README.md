@@ -71,7 +71,8 @@ Webサービスでのテキスト生成は手作業で行いました。生成�
 
 ## Review Prompt
 
-GPT-4(ChatGPT August 3 Version)  
+リポジトリ公開時の評価はGPT-4(ChatGPT August 3 Version)で行いましたが、その後追加した評価はその時点でのChatGPTに適用されているGPT-4のバージョンで評価しています。
+
 Ratingの勝敗を決めるために使用している、ChatGPTの設定
 
 Custom Instruction
