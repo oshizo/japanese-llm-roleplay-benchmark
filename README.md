@@ -20,13 +20,13 @@ Webサービスでのテキスト生成は手作業で行いました。生成�
 | model_id                                                | Rating ± RD   | ERP Score   |
 |:--------------------------------------------------------|:--------------|:------------|
 | GPT-4/ChatGPT-August-3                                  | 1630 ± 88     |           - |
-| supertrin-beta                                          | 1477 ± 76     | <ins>0.67</ins> |
+| supertrin-beta                                          | 1477 ± 76     |        0.90 |
 | GPT-3.5/ChatGPT-August-3                                | 1428 ± 73     |           - |
-| stabilityai/japanese-stablelm-instruct-alpha-7b-v2      | 1224 ± 71     |    **0.75** |
-| elyza/ELYZA-japanese-Llama-2-7b-fast-instruct           | 1197 ± 68     |        0.42 |
-| line-corporation/japanese-large-lm-3.6b-instruction-sft | 1120 ± 66     |        0.17 |
-| AIBunCho/japanese-novel-gpt-j-6b                        | 1048 ± 76     |        0.50 |
-| rinna/bilingual-gpt-neox-4b-instruction-ppo             | 934 ± 77      |        0.08 |
+| stabilityai/japanese-stablelm-instruct-alpha-7b-v2      | 1224 ± 71     |        0.80 |
+| elyza/ELYZA-japanese-Llama-2-7b-fast-instruct           | 1197 ± 68     |        0.30 |
+| line-corporation/japanese-large-lm-3.6b-instruction-sft | 1120 ± 66     |        0.80 |
+| AIBunCho/japanese-novel-gpt-j-6b                        | 1048 ± 76     |        0.90 |
+| rinna/bilingual-gpt-neox-4b-instruction-ppo             | 934 ± 77      |        0.60 |
 
 ## Rating
 
@@ -41,6 +41,7 @@ Webサービスでのテキスト生成は手作業で行いました。生成�
 * 出力の最初のセリフのみを考慮します
   * 一度相槌のセリフを出力してから次のセリフとして長く話すような出力は、相槌のセリフのみが評価対象となるため評価が低くなる問題があります
 * レーティング値は他のモデルとの相対的な数値であり、モデルが追加されるたびに変化します
+* 10シチュエーションに対し1回ずつランダム生成した10文のみで評価されています。シチュエーションを増やすこと変動する余地が大きく残っています
 * マルチターンの会話性能や、長いコンテキストでの性能を評価しません
 * 0-shotの設定のみで評価しているため、few-shot性能は評価しません
 
@@ -59,8 +60,10 @@ Webサービスでのテキスト生成は手作業で行いました。生成�
 
 このスコアの制限
 * OpenAIのモデルを評価しません（コンテンツポリシーに違反するため）
+* 出力の最初のセリフと、直後の最大2つの地の文またはセリフを評価します。
 * キャラクター設定に対するセリフの適切さを評価しません
 * 文脈に対するセリフの適切さを評価しません
+* 10シチュエーションに対し1回ずつランダム生成した10文のみで評価されています。シチュエーションを増やすこと変動する余地が大きく残っています
 * マルチターンの会話性能や、長いコンテキストでの性能を評価しません
 * 0-shotの設定のみで評価しているため、few-shot性能は評価しません
 * スコアリングモデルは1名のアノテーターによる1,500件程度の少量のデータで学習されており、スコアリング品質には改善の余地があります
