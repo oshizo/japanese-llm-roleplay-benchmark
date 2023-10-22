@@ -20,13 +20,14 @@ Webサービスでのテキスト生成は手作業で行いました。生成�
 | model_id                                                | Rating ± RD   | ERP Score   |
 |:--------------------------------------------------------|:--------------|:------------|
 | GPT-4/ChatGPT-August-3                                  | 1630 ± 88     |           - |
-| supertrin-beta                                          | 1477 ± 76     |        0.90 |
+| supertrin-beta                                          | 1477 ± 76     |        **0.90** |
 | GPT-3.5/ChatGPT-August-3                                | 1428 ± 73     |           - |
-| stabilityai/japanese-stablelm-instruct-alpha-7b-v2      | 1224 ± 71     |        0.80 |
-| elyza/ELYZA-japanese-Llama-2-7b-fast-instruct           | 1197 ± 68     |        0.30 |
-| line-corporation/japanese-large-lm-3.6b-instruction-sft | 1120 ± 66     |        0.80 |
-| AIBunCho/japanese-novel-gpt-j-6b                        | 1048 ± 76     |        0.90 |
-| rinna/bilingual-gpt-neox-4b-instruction-ppo             | 934 ± 77      |        0.60 |
+| stabilityai/japanese-stablelm-instruct-alpha-7b-v2      | 1224 ± 71     |        <ins>0.85</ins> |
+| elyza/ELYZA-japanese-Llama-2-7b-fast-instruct           | 1197 ± 68     |        0.55 |
+| line-corporation/japanese-large-lm-3.6b-instruction-sft | 1120 ± 66     |        0.65 |
+| AIBunCho/japanese-novel-gpt-j-6b                        | 1048 ± 76     |        <ins>0.85</ins> |
+| rinna/bilingual-gpt-neox-4b-instruction-ppo             | 934 ± 77      |        0.40 |
+| llm-jp/llm-jp-13b-instruct-full-dolly-oasst-v1.0        | now rating    |        0.60 |
 
 ## Rating
 
@@ -36,6 +37,7 @@ Webサービスでのテキスト生成は手作業で行いました。生成�
 レーティングには[Glicko2](https://github.com/deepy/glicko2/)を使用しました。  
 
 全ての対戦の勝敗とGPT-4による評価コメントは[review_gpt-4.jsonl](https://github.com/oshizo/japanese-llm-roleplay-benchmark/blob/main/review_gpt-4.jsonl)で確認できます。
+また、[このウェブサイト](https://furoriented.org/)に対戦結果のビューワーを公開しています。
 
 このレーティングの制限
 * 出力の最初のセリフのみを考慮します
@@ -63,7 +65,7 @@ Webサービスでのテキスト生成は手作業で行いました。生成�
 * 出力の最初のセリフと、直後の最大2つの地の文またはセリフを評価します。
 * キャラクター設定に対するセリフの適切さを評価しません
 * 文脈に対するセリフの適切さを評価しません
-* 10シチュエーションに対し1回ずつランダム生成した10文のみで評価されています。シチュエーションを増やすこと変動する余地が大きく残っています
+* 20シチュエーションに対し1回ずつランダム生成した20文のみで評価されています。シチュエーションを増やすこと変動する余地が残っています
 * マルチターンの会話性能や、長いコンテキストでの性能を評価しません
 * 0-shotの設定のみで評価しているため、few-shot性能は評価しません
 * スコアリングモデルは1名のアノテーターによる1,500件程度の少量のデータで学習されており、スコアリング品質には改善の余地があります
