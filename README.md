@@ -31,13 +31,13 @@ Webサービスでのテキスト生成は手作業で行いました。生成�
 
 ## Rating
 
-10種類のキャラクターの設定とシチュエーション（[このファイル](https://github.com/oshizo/japanese-llm-roleplay-benchmark/blob/main/situations.jsonl)に一覧があります）に対し、0-shotでロールプレイする性能を評価します。  
+10種類のキャラクターの設定とシチュエーション（[situations.jsonl](https://github.com/oshizo/japanese-llm-roleplay-benchmark/blob/main/situations.jsonl)に一覧があります）に対し、0-shotでロールプレイする性能を評価します。  
 各モデルにキャラクター設定とシチュエーションを与え、キャラクターの次のセリフを生成させます。  
 生成したセリフを使って1モデル対1モデルの対戦を行い、勝敗をGPT-4によって判定します（詳細は[Review Prompt](#review-prompt)を参照）。  
 レーティングには[Glicko2](https://github.com/deepy/glicko2/)を使用しました。  
 
 全ての対戦の勝敗とGPT-4による評価コメントは[review_gpt-4.jsonl](https://github.com/oshizo/japanese-llm-roleplay-benchmark/blob/main/review_gpt-4.jsonl)で確認できます。
-また、[このウェブサイト](https://furoriented.org/)に対戦結果のビューワーを公開しています。
+また、[furoriented.org](https://furoriented.org/)に対戦結果のビューワーを公開しています。
 
 このレーティングの制限
 * 出力の最初のセリフのみを考慮します
@@ -58,7 +58,7 @@ Webサービスでのテキスト生成は手作業で行いました。生成�
 スコアリングモデルはHuggingface Hub([oshizo/japanese-sexual-moderation](https://huggingface.co/oshizo/japanese-sexual-moderation))で公開しています。
 
 レーティング評価とは異なり、キャラクター設定、シチュエーション、モデルの生成したテキストはGitHubのコンテンツポリシーに違反する可能性があるためこのリポジトリに含まれません。  
-もしこれらの情報に興味があり、かつあなたが18歳以上である場合は[このウェブサイト](https://furoriented.org/)を確認してください。
+もしこれらの情報に興味があり、かつあなたが18歳以上である場合は[furoriented.org](https://furoriented.org/)を確認してください。
 
 このスコアの制限
 * OpenAIのモデルを評価しません（コンテンツポリシーに違反するため）
