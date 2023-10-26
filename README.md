@@ -15,19 +15,20 @@
 OSSモデルでのテキスト生成に使用したスクリプトは、各モデルのnotebook（[01_line-corporation_japanese-large-lm-3.6b-instruction-sft.ipynb](https://github.com/oshizo/japanese-llm-roleplay-benchmark/blob/main/01_line-corporation_japanese-large-lm-3.6b-instruction-sft.ipynb)など）で確認できます。  
 Webサービスでのテキスト生成は手作業で行いました。生成方法は[ChatGPT Prompt](#chatgpt-prompt)と[AIのべりすと](#aiのべりすと)を参照してください。
 
-## Leaderboard v20231022
+## Leaderboard v20231026
 
 | model_id                                                | Rating ± RD   | ERP Score   |
 |:--------------------------------------------------------|:--------------|:------------|
-| GPT-4/ChatGPT-August-3                                  | 1643 ± 91     |             |
-| GPT-3.5/ChatGPT-August-3                                | 1424 ± 75     |             |
-| supertrin-beta                                          | 1422 ± 80     |   **0.90**  |
-| stabilityai/japanese-stablelm-instruct-alpha-7b-v2      | 1242 ± 71     | <ins>0.85</ins> |
-| elyza/ELYZA-japanese-Llama-2-7b-fast-instruct           | 1229 ± 66     |        0.55 |
-| line-corporation/japanese-large-lm-3.6b-instruction-sft | 1143 ± 65     |        0.65 |
-| AIBunCho/japanese-novel-gpt-j-6b                        | 1081 ± 73     | <ins>0.85</ins> |
-| llm-jp/llm-jp-13b-instruct-full-dolly-oasst-v1.0        | 977 ± 75      |        0.60 |
-| rinna/bilingual-gpt-neox-4b-instruction-ppo             | 943 ± 69      |        0.40 |
+| GPT-4/ChatGPT-August-3                                  | 1586 ± 84     |             |
+| supertrin-beta                                          | 1468 ± 72     |   <ins>0.90</ins> |
+| GPT-3.5/ChatGPT-August-3                                | 1402 ± 68     |             |
+| stabilityai/japanese-stablelm-instruct-gamma-7b         | 1305 ± 66     |       **0.95** |
+| stabilityai/japanese-stablelm-instruct-alpha-7b-v2      | 1248 ± 66     |        0.85 |
+| elyza/ELYZA-japanese-Llama-2-7b-fast-instruct           | 1185 ± 64     |        0.55 |
+| line-corporation/japanese-large-lm-3.6b-instruction-sft | 1126 ± 67     |        0.65 |
+| AIBunCho/japanese-novel-gpt-j-6b                        | 1122 ± 72     |        0.85 |
+| llm-jp/llm-jp-13b-instruct-full-dolly-oasst-v1.0        | 1013 ± 76     |        0.60 |
+| rinna/bilingual-gpt-neox-4b-instruction-ppo             | 967 ± 71      |        0.40 |
 
 ## Rating
 
@@ -43,7 +44,7 @@ Webサービスでのテキスト生成は手作業で行いました。生成�
 * 出力の最初のセリフのみを考慮します
   * 一度相槌のセリフを出力してから次のセリフとして長く話すような出力は、相槌のセリフのみが評価対象となるため評価が低くなる問題があります
 * レーティング値は他のモデルとの相対的な数値であり、モデルが追加されるたびに変化します
-* 10シチュエーションに対し1回ずつランダム生成した10文のみで評価されています。シチュエーションを増やすこと変動する余地が大きく残っています
+* 10シチュエーションに対し1回ずつランダム生成した10文のみで評価されています。シチュエーションを増やすことで変動する余地が大きく残っています
 * マルチターンの会話性能や、長いコンテキストでの性能を評価しません
 * 0-shotの設定のみで評価しているため、few-shot性能は評価しません
 
