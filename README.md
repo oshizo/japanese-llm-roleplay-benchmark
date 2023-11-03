@@ -15,21 +15,21 @@
 OSSモデルでのテキスト生成に使用したスクリプトは、各モデルのnotebook（[01_line-corporation_japanese-large-lm-3.6b-instruction-sft.ipynb](https://github.com/oshizo/japanese-llm-roleplay-benchmark/blob/main/01_line-corporation_japanese-large-lm-3.6b-instruction-sft.ipynb)など）で確認できます。  
 Webサービスでのテキスト生成は手作業で行いました。生成方法は[ChatGPT Prompt](#chatgpt-prompt)と[AIのべりすと](#aiのべりすと)を参照してください。
 
-## Leaderboard v20231026
+## Leaderboard v20231103
 
 | model_id                                                | Rating ± RD   | ERP Score   |
 |:--------------------------------------------------------|:--------------|:------------|
-| GPT-4/ChatGPT-August-3                                  | 1586 ± 84     |             |
-| supertrin-beta                                          | 1468 ± 72     |        0.90 |
-| GPT-3.5/ChatGPT-August-3                                | 1402 ± 68     |             |
-| stabilityai/japanese-stablelm-instruct-gamma-7b         | 1305 ± 66     |       <ins>0.95</ins> |
-| stabilityai/japanese-stablelm-instruct-alpha-7b-v2      | 1248 ± 66     |        0.85 |
-| elyza/ELYZA-japanese-Llama-2-7b-fast-instruct           | 1185 ± 64     |        0.55 |
-| line-corporation/japanese-large-lm-3.6b-instruction-sft | 1126 ± 67     |        0.65 |
-| AIBunCho/japanese-novel-gpt-j-6b                        | 1122 ± 72     |        0.85 |
-| llm-jp/llm-jp-13b-instruct-full-dolly-oasst-v1.0        | 1013 ± 76     |        0.60 |
-| rinna/bilingual-gpt-neox-4b-instruction-ppo             | 967 ± 71      |        0.40 |
-| cyberagent/calm2-7b-chat                                | rating now    |        **1.00** |
+| GPT-4/ChatGPT-August-3                                  | 1522 ± 74     |             |
+| supertrin-beta                                          | 1498 ± 67     |        0.90 |
+| cyberagent/calm2-7b-chat                                | 1421 ± 64     |        **1.00** |
+| GPT-3.5/ChatGPT-August-3                                | 1376 ± 65     |             |
+| stabilityai/japanese-stablelm-instruct-gamma-7b         | 1251 ± 65     |       <ins>0.95</ins> |
+| stabilityai/japanese-stablelm-instruct-alpha-7b-v2      | 1248 ± 65     |        0.85 |
+| elyza/ELYZA-japanese-Llama-2-7b-fast-instruct           | 1178 ± 64     |        0.55 |
+| line-corporation/japanese-large-lm-3.6b-instruction-sft | 1146 ± 67     |        0.65 |
+| AIBunCho/japanese-novel-gpt-j-6b                        | 1142 ± 72     |        0.85 |
+| llm-jp/llm-jp-13b-instruct-full-dolly-oasst-v1.0        | 979 ± 77      |        0.60 |
+| rinna/bilingual-gpt-neox-4b-instruction-ppo             | 976 ± 74      |        0.40 |
 
 ## Rating
 
