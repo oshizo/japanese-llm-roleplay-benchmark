@@ -20,15 +20,16 @@ Webサービスでのテキスト生成は手作業で行いました。生成�
 | model_id                                                | Rating ± RD   | ERP Score   |
 |:--------------------------------------------------------|:--------------|:------------|
 | GPT-4/ChatGPT-August-3                                  | 1586 ± 84     |             |
-| supertrin-beta                                          | 1468 ± 72     |   <ins>0.90</ins> |
+| supertrin-beta                                          | 1468 ± 72     |        0.90 |
 | GPT-3.5/ChatGPT-August-3                                | 1402 ± 68     |             |
-| stabilityai/japanese-stablelm-instruct-gamma-7b         | 1305 ± 66     |       **0.95** |
+| stabilityai/japanese-stablelm-instruct-gamma-7b         | 1305 ± 66     |       <ins>0.95</ins> |
 | stabilityai/japanese-stablelm-instruct-alpha-7b-v2      | 1248 ± 66     |        0.85 |
 | elyza/ELYZA-japanese-Llama-2-7b-fast-instruct           | 1185 ± 64     |        0.55 |
 | line-corporation/japanese-large-lm-3.6b-instruction-sft | 1126 ± 67     |        0.65 |
 | AIBunCho/japanese-novel-gpt-j-6b                        | 1122 ± 72     |        0.85 |
 | llm-jp/llm-jp-13b-instruct-full-dolly-oasst-v1.0        | 1013 ± 76     |        0.60 |
 | rinna/bilingual-gpt-neox-4b-instruction-ppo             | 967 ± 71      |        0.40 |
+| cyberagent/calm2-7b-chat                                | rating now    |        **1.00** |
 
 ## Rating
 
